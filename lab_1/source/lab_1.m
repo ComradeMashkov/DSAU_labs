@@ -7,7 +7,7 @@ den = [1, 2.462, 6.14, 11.45];
 
 T0 = 0.1;
 T1 = 1;
-T2 = 10;
+T2 = 2;
 
 Gp_continuous = tf(num, den);
 Gp_discrete_0 = c2d(Gp_continuous, T0);
@@ -51,7 +51,7 @@ G_ST_2 = (1 / Gp_discrete_2) * G_ST_R_2;
 % 
 % f6 = figure;
 % step(G_ST_2);
-% legend('T_2 = 10 sec');
+% legend('T_2 = 2 sec');
 % grid;
 
 
