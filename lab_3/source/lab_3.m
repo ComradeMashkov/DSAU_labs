@@ -24,8 +24,6 @@ for Ts = [0.1, 1, 10]
     K_stable = place(A, B, p_stable);
     K_unstable = place(A, B, p_unstable);
 
-    G = c2d(W, Ts);
-
     K_0_stable = -1 / (C * (A - B * K_stable)^(-1) * B);
     K_0_unstable = -1 / (C * (A - B * K_unstable)^(-1) * B);
 
